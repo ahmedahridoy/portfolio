@@ -111,7 +111,7 @@ main {
     margin: 0 auto;
 }
 
-main section{
+main section {
     margin-top: 130px;
 }
 
@@ -155,46 +155,48 @@ main section{
 
 /* Resume css */
 
-.resume-container{
+.resume-container {
     display: flex;
     gap: 50px;
 
 }
 
-.resume-column-title{
-   color: #474747; 
-   font-size: 30px;
-   font-weight: 700;
-   margin-bottom: 10px;
-}
-.item-title{
+.resume-column-title {
     color: #474747;
-    font-size: 25px;
-    font-weight: 700; 
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.item-institute{
+.item-title {
+    color: #474747;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.item-institute {
     margin-top: 0px;
     margin-bottom: 20px;
 }
+
 .item-des,
-.item-institute{
+.item-institute {
     color: #757575;
-    
+
 }
 
 .resume-container hr {
     margin: 30px;
 }
 
-.download-cv{
+.download-cv {
     text-align: center;
     margin-top: 50px;
 }
 
 /* footer css */
 
-footer{
+footer {
     display: flex;
     gap: 100px;
     background: #fff8f3;
@@ -202,16 +204,17 @@ footer{
     padding: 130px 200px;
 }
 
-.footer-column{
+.footer-column {
     width: 50%;
 }
 
-.social a{
+.social a {
     margin-right: 25px;
 }
 
-.contact input[type="text"], input[type="email"],
-textarea{
+.contact input[type="text"],
+input[type="email"],
+textarea {
     display: block;
     margin-bottom: 25px;
     padding: 18px 35px;
@@ -221,3 +224,38 @@ textarea{
     border: 0;
     width: 100%;
 }
+
+/* Resposive styles */
+
+@media screen and (max-width:576px) {
+
+    .skills-container,
+    .resume-container,
+    footer {
+        flex-direction: column;
+    }
+
+    #what-i-do-des {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .contact input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 80%;
+    }
+    .contact input[type="submit"] {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {}
