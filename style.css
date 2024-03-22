@@ -260,7 +260,10 @@ textarea {
     .about {
         padding: 10px;
     }
-    
+    .about{
+        margin: auto;
+    }
+
     .primary-button {
         margin-bottom: 15px;
     }
